@@ -14,6 +14,9 @@
 		5CB8A0E42063A35E00FE3B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB8A0E32063A35E00FE3B27 /* Assets.xcassets */; };
 		5CB8A0E72063A35E00FE3B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB8A0E52063A35E00FE3B27 /* LaunchScreen.storyboard */; };
 		5CB8A0EA2063A35E00FE3B27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB8A0E92063A35E00FE3B27 /* main.m */; };
+		5CB8A0F32063A79500FE3B27 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB8A0F22063A79500FE3B27 /* BViewController.m */; };
+		5CB8A0F72063A81500FE3B27 /* Target_ModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB8A0F62063A81500FE3B27 /* Target_ModuleB.m */; };
+		5CB8A0F92063AC7800FE3B27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB8A0F82063AC7800FE3B27 /* UIKit.framework */; };
 		CCFFA23648447119A6521F44 /* libPods-B.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D1AF2E253360708348D2F9A /* libPods-B.a */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,11 @@
 		5CB8A0E62063A35E00FE3B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CB8A0E82063A35E00FE3B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CB8A0E92063A35E00FE3B27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CB8A0F12063A79500FE3B27 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		5CB8A0F22063A79500FE3B27 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		5CB8A0F52063A81500FE3B27 /* Target_ModuleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_ModuleB.h; sourceTree = "<group>"; };
+		5CB8A0F62063A81500FE3B27 /* Target_ModuleB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_ModuleB.m; sourceTree = "<group>"; };
+		5CB8A0F82063AC7800FE3B27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8D1AF2E253360708348D2F9A /* libPods-B.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-B.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46AB2DE9D06C2FDE768FC02 /* Pods-B.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B.debug.xcconfig"; path = "Pods/Target Support Files/Pods-B/Pods-B.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB8A0F92063AC7800FE3B27 /* UIKit.framework in Frameworks */,
 				CCFFA23648447119A6521F44 /* libPods-B.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +67,7 @@
 		3CCB4E07166617F081939587 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CB8A0F82063AC7800FE3B27 /* UIKit.framework */,
 				8D1AF2E253360708348D2F9A /* libPods-B.a */,
 			);
 			name = Frameworks;
@@ -84,6 +94,7 @@
 		5CB8A0D62063A35E00FE3B27 /* B */ = {
 			isa = PBXGroup;
 			children = (
+				5CB8A0F02063A75900FE3B27 /* B */,
 				5CB8A0D72063A35E00FE3B27 /* AppDelegate.h */,
 				5CB8A0D82063A35E00FE3B27 /* AppDelegate.m */,
 				5CB8A0DA2063A35E00FE3B27 /* ViewController.h */,
@@ -94,6 +105,17 @@
 				5CB8A0E82063A35E00FE3B27 /* Info.plist */,
 				5CB8A0E92063A35E00FE3B27 /* main.m */,
 				5CB8A0E02063A35E00FE3B27 /* B.xcdatamodeld */,
+			);
+			path = B;
+			sourceTree = "<group>";
+		};
+		5CB8A0F02063A75900FE3B27 /* B */ = {
+			isa = PBXGroup;
+			children = (
+				5CB8A0F52063A81500FE3B27 /* Target_ModuleB.h */,
+				5CB8A0F62063A81500FE3B27 /* Target_ModuleB.m */,
+				5CB8A0F12063A79500FE3B27 /* BViewController.h */,
+				5CB8A0F22063A79500FE3B27 /* BViewController.m */,
 			);
 			path = B;
 			sourceTree = "<group>";
@@ -224,8 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CB8A0DC2063A35E00FE3B27 /* ViewController.m in Sources */,
+				5CB8A0F72063A81500FE3B27 /* Target_ModuleB.m in Sources */,
 				5CB8A0E22063A35E00FE3B27 /* B.xcdatamodeld in Sources */,
 				5CB8A0EA2063A35E00FE3B27 /* main.m in Sources */,
+				5CB8A0F32063A79500FE3B27 /* BViewController.m in Sources */,
 				5CB8A0D92063A35E00FE3B27 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

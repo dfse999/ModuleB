@@ -1,10 +1,9 @@
-# Uncomment the next line to define a global platform for your project
+# Uncomment this line to define a global platform for your project
 # platform :ios, '9.0'
 
+source 'http://codeview.bkjk-inc.com/source/test.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 target 'B' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
-
-  # Pods for B
-
+ pod 'HandyFrame'
 end
